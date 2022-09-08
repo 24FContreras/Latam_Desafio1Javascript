@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío 1</title>
+  <!-- STTYLESHEETS-->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <main>
+    <article class="card">
+      <div class="card-img">
+        <img src="assets/img/laptop.png" alt="Laptop Gamer AMD">
+      </div>
+      <div class="card-body">
+        <h1>Laptop Gamer AMD</h1>
+        <input type="number" min="0" name="number" id="cantidadUsuario">
+        <input type="color" name="color" id="colorUsuario">
+        <p>Precio: $400.000</p>
+        <button id="submit">Calcular Total</button>
+      </div>
+    </article>
+    <article class="totals">
+      <p>Total: <span id="precioTotal">$0</span></p>
+      <p>Cantidad: <span id="cantidadTotal">0</span></p>
+      <div class="clr">
+        <p>Color: </p>
+        <div class="color-ring" id="colorRing"></div>
+      </div>
+    </article>
+  </main>
+
+  <script src="assets/js/cardScript.js"></script>
+</body>
+
+
+</html>
