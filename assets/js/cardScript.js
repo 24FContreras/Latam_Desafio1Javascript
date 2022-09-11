@@ -10,10 +10,10 @@ submit.addEventListener("click", function () {
   precioTotal.innerHTML = Intl.NumberFormat("es-CL", {
     style: "currency",
     currency: "CLP",
-  }).format(cantidadUsuario.value * precio);
+  }).format(Number(cantidadUsuario.value) * precio);
 
   cantidadTotal.innerHTML = cantidadUsuario.value;
   colorRing.style.backgroundColor = colorUsuario.value;
 });
 
-precioTotal.innerHTML = cantidadUsuario.value * precio;
+precioTotal.innerHTML = Number(cantidadUsuario.value) * precio;
